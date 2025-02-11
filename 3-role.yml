@@ -113,3 +113,7 @@ rules:
 
 ## About Role / Cluster Role 
 # https://kubernetes.io/docs/reference/access-authn-authz/rbac/#referring-to-resources
+
+# To enable RBAC, need to start the API server with RBAC
+# 2 types of roles - Role, ClusterRole (for cluster-scoped permissions)
+# Role/ClusterRole - mainly to create permissions

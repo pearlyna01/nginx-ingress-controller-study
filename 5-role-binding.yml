@@ -42,5 +42,7 @@ subjects:
   namespace: ingress-nginx
 
 ## About Role Binding 
+# - binds the role to the service accounts
+
 ## About Role / Cluster Role 
 # https://kubernetes.io/docs/reference/access-authn-authz/rbac/#referring-to-resources

@@ -8,3 +8,16 @@ metadata:
 
 ## About Namespace
 # https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/
+
+# Namespaces are used to 
+# - isolate groups of resources within a single cluster. 
+# - Only for namespaced objects (e.g. Deployments, Services, etc.)
+# - Not for cluster-wide objects (e.g. StorageClass, Nodes, PersistentVolumes, etc.)
+# - Can be useful for seperating dev, stag and prod. Because of the DNS, <service-name>.<namespace-name>.svc.cluster.local
+
+# Commands
+# - kubectl get namespace
+# - kubectl run nginx --image=nginx --namespace=<insert-namespace-name-here>
+# - kubectl get pods --namespace=<insert-namespace-name-here>
+# - kubectl config set-context --current --namespace=<insert-namespace-name-here>
+#   - save the namespace for all subsequent kubectl commands in that context.

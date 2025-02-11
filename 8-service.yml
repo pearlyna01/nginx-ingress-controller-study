@@ -5,6 +5,7 @@ metadata:
     service.beta.kubernetes.io/aws-load-balancer-backend-protocol: tcp
     service.beta.kubernetes.io/aws-load-balancer-cross-zone-load-balancing-enabled: "true"
     service.beta.kubernetes.io/aws-load-balancer-type: nlb
+    # use "service.beta.kubernetes.io/aws-load-balancer-type: external" for new deployments
   labels:
     app.kubernetes.io/component: controller
     app.kubernetes.io/instance: ingress-nginx
@@ -52,6 +53,10 @@ spec:
     name: https-webhook
     port: 443
     targetPort: webhook
+  - appProtocol: http
+    name: http-webhook
+    port: 80
+    targetPort: webhook
   selector:
     app.kubernetes.io/component: controller
     app.kubernetes.io/instance: ingress-nginx
@@ -60,3 +65,7 @@ spec:
 
 ## About Service
 # https://kubernetes.io/docs/concepts/services-networking/service/
+
+# For configuring AWS nlb,
+# https://docs.aws.amazon.com/eks/latest/userguide/auto-configure-nlb.html
+# https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.11/guide/service/nlb/
