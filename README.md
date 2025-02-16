@@ -27,6 +27,9 @@ https://kubernetes.github.io/ingress-nginx/
 Nginx Ingress Examples:
 https://kubernetes.github.io/ingress-nginx/examples/
 
+NGINX Ingress controller with Helm:
+https://docs.nginx.com/nginx-ingress-controller/installation/installing-nic/installation-with-helm/
+
 If using EKS + ALB, use aws load balancer controller
 - https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.4/
 - To use ALB + nginx ingress -> use nodeport
