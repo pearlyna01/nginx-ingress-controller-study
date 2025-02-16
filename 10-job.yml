@@ -106,3 +106,6 @@ spec:
 
 ## About Job 
 # https://kubernetes.io/docs/concepts/workloads/controllers/job/
+
+# helps to run one-time job that runs a task 
+# It starts a new pod if 1st pod fails or deleted

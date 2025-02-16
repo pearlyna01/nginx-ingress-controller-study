@@ -33,4 +33,8 @@ webhooks:
   sideEffects: None
 
 ## About Validating webhooks
-# https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/
+# https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/
+
+# Validates requests going to API server. 
+
+# background on admission controllers -> admission controllers check requests to K8's API server to modify/delete/create a resource.

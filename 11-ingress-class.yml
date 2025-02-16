@@ -13,3 +13,4 @@ spec:
 
 ## About Ingress Class
 # https://kubernetes.io/docs/concepts/services-networking/ingress/#ingressclass-scope
+# Helps to differeniate the different groups of ingress for different ingress controllers
