@@ -37,4 +37,5 @@ webhooks:
 
 # Validates requests going to API server. 
 
-# background on admission controllers -> admission controllers check requests to K8's API server to modify/delete/create a resource.
+## About admission controllers
+# Admission controllers check requests to K8's API server to modify/delete/create a resource.
